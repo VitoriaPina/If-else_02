@@ -15,4 +15,20 @@ function draw() {
 
     }
  }
+ 
+   if (mouseX < width / 2) {
+
+    fill(random(100, 220), random(100, 200), random(150, 220));
+
+    push();
+    translate(mouseX, mouseY);
+
+    beginShape();
+    vertex(0, -30);
+    bezierVertex(40, -50, 50, 20, 10, 35);
+    bezierVertex(-30, 50, -50, 0, 0, -30);
+    endShape(CLOSE);
+
+    pop();
+  }
   }
