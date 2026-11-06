@@ -5,18 +5,25 @@ function setup() {
 }
 
 function draw() {
+
+  // LADO ESQUERDO - FORMAS GEOMÉTRICAS
+  if (mouseX < width / 2) {
+
     if (frameCount % 7 == 0) {
-  fill(random(50, 200), random(100, 220), random(150, 255));
 
-    if (random(1) < 0.7) {
-      rect(mouseX, mouseY, random(20, 80), random(20, 80));
-    } else {
-      square(mouseX, mouseY, random(20, 70));
+      fill(random(50, 200), random(100, 220), random(150, 255));
 
+      if (random(1) < 0.7) {
+        rect(mouseX, mouseY, random(20, 80), random(20, 80));
+      } else {
+        square(mouseX, mouseY, random(20, 70));
+      }
     }
- }
- 
-else {
+
+  }
+
+  // LADO DIREITO - FORMAS ORGÂNICAS
+  else {
 
     if (frameCount % 5 == 0) {
 
