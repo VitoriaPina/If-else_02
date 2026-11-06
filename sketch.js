@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-    if (frameCount % 10 == 0) {
+    if (frameCount % 7 == 0) {
   fill(random(50, 200), random(100, 220), random(150, 255));
 
     if (random(1) < 0.7) {
