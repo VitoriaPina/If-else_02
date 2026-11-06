@@ -6,7 +6,6 @@ function setup() {
 
 function draw() {
 
-  // LADO ESQUERDO - FORMAS GEOMÉTRICAS
   if (mouseX < width / 2) {
 
     if (frameCount % 7 == 0) {
@@ -22,7 +21,6 @@ function draw() {
 
   }
 
-  // LADO DIREITO - FORMAS ORGÂNICAS
   else {
 
     if (frameCount % 5 == 0) {
