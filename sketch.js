@@ -16,19 +16,16 @@ function draw() {
     }
  }
  
-   if (mouseX < width / 2) {
+else {
 
-    fill(random(100, 220), random(100, 200), random(150, 220));
+    if (frameCount % 5 == 0) {
 
-    push();
-    translate(mouseX, mouseY);
+      fill(random(100, 220), random(100, 200), random(150, 220));
 
-    beginShape();
-    vertex(0, -30);
-    bezierVertex(40, -50, 50, 20, 10, 35);
-    bezierVertex(-30, 50, -50, 0, 0, -30);
-    endShape(CLOSE);
+      ellipse(mouseX, mouseY, 50, 40);
+      ellipse(mouseX + 15, mouseY - 10, 35, 45);
+      ellipse(mouseX - 15, mouseY + 10, 40, 35);
 
-    pop();
+    }
   }
-  }
+}
